@@ -59,7 +59,5 @@ Each project documents the objective, environment, commands, results, troublesho
 
 ## Contact
 
-GitHub: [Your GitHub Profile URL]
-
-*This portfolio documents personal training labs and projects. It does not represent production-system administration experience unless explicitly stated.*
+GitHub: https://github.com/evans-altidor/linux-system-administrator-portfolio
 
