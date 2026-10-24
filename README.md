@@ -1,8 +1,5 @@
 # linux-system-administrator-portfolio
 Hands-on Linux administration labs, Bash automation, networking, security, and troubleshooting projects.
-
-# Linux System Administrator Portfolio
-
 ## About Me
 
 I am an aspiring Linux System Administrator building practical skills through hands-on labs and documented technical projects.
