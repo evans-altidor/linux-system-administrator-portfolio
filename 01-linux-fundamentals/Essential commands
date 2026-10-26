@@ -1,1 +1,229 @@
+# Week 1: Linux Fundamentals
+
+## 1. Project Overview
+
+**Project:** Linux Fundamentals Lab  
+**Level:** Beginner  
+**Operating System:** Ubuntu Server LTS  
+**Environment:** VirtualBox virtual machine  
+**Category:** Linux System Administration
+
+### Objective
+
+The objective of this project is to develop a strong foundation in Linux command-line operations and learn how to navigate the Linux filesystem, manage files, inspect system information, and use essential terminal commands.
+
+These skills are fundamental to a Junior Linux System Administrator role.
+
+## 2. Lab Environment
+
+The laboratory uses:
+
+- Ubuntu Server LTS
+- Oracle VirtualBox
+- Linux Bash terminal
+- A dedicated practice directory
+
+All exercises are performed in a personal training environment, not on a production server.
+
+## 3. Learning Objectives
+
+By the end of this lab, I aim to understand how to:
+
+- Identify the current Linux user and hostname.
+- Navigate directories using the terminal.
+- List files, including hidden files.
+- Create, copy, move, and rename files.
+- Read text files and search for specific content.
+- Identify the Linux distribution and kernel version.
+- Check disk space, memory, and system uptime.
+- Document technical work professionally.
+
+## 4. Essential Linux Commands
+
+| Command | Purpose |
+|---|---|
+| `whoami` | Displays the current username |
+| `hostname` | Displays the computer's hostname |
+| `pwd` | Displays the current working directory |
+| `ls -la` | Lists files, including hidden files |
+| `cd` | Changes the current directory |
+| `mkdir` | Creates a directory |
+| `touch` | Creates an empty file |
+| `cat` | Displays file contents |
+| `cp` | Copies files |
+| `mv` | Moves or renames files |
+| `grep` | Searches for text patterns |
+| `uname -r` | Displays the running kernel version |
+| `df -h` | Displays filesystem disk usage |
+| `free -h` | Displays memory usage |
+| `uptime` | Displays system uptime and load averages |
+
+## 5. Hands-On Exercises
+
+### Exercise 1: Identify the Linux System
+
+Run the following commands individually:
+
+```bash
+whoami
+hostname
+cat /etc/os-release
+uname -r
+uptime
+```
+
+**Purpose:** Understand which user is logged in, identify the machine, and inspect the operating system and kernel.
+
+### Exercise 2: Create a Practice Directory
+
+Run:
+
+```bash
+mkdir -p ~/linux-lab/week01
+cd ~/linux-lab/week01
+pwd
+```
+
+**Purpose:** Create a dedicated workspace and learn directory navigation.
+
+### Exercise 3: Create and Read Files
+
+Run:
+
+```bash
+mkdir practice
+cd practice
+touch notes.txt
+echo "My first Linux fundamentals lab" > notes.txt
+cat notes.txt
+```
+
+**Expected result:** The terminal displays:
+
+```text
+My first Linux fundamentals lab
+```
+
+**Purpose:** Learn how to create directories, create files, write text, and read file contents.
+
+### Exercise 4: Copy and Rename Files
+
+Run:
+
+```bash
+cp notes.txt notes-backup.txt
+mv notes-backup.txt notes-final.txt
+ls -l
+```
+
+**Expected result:** The directory contains `notes.txt` and `notes-final.txt`.
+
+**Purpose:** Practice file copying, renaming, and listing.
+
+### Exercise 5: Search for Text
+
+Run:
+
+```bash
+grep "Linux" notes.txt
+```
+
+**Expected result:**
+
+```text
+My first Linux fundamentals lab
+```
+
+**Purpose:** Learn how to search for a word or pattern in a file.
+
+### Exercise 6: Inspect System Resources
+
+Run:
+
+```bash
+df -h
+free -h
+ip addr
+```
+
+**Purpose:** Inspect available disk space, memory, and network interfaces.
+
+The exact output depends on the virtual machine configuration.
+
+## 6. Verification Checklist
+
+After performing the exercises, verify the following:
+
+- [ ] I can identify my current Linux user.
+- [ ] I can identify my Linux distribution and kernel version.
+- [ ] I can navigate directories using `cd` and `pwd`.
+- [ ] I can list files using `ls -la`.
+- [ ] I can create directories and files.
+- [ ] I can copy and rename files.
+- [ ] I can read file contents using `cat`.
+- [ ] I can search for text using `grep`.
+- [ ] I can inspect disk space and memory usage.
+
+## 7. Troubleshooting Notes
+
+Document any errors encountered during the lab.
+
+Examples of issues to investigate:
+
+**Problem:** `No such file or directory`
+
+Possible cause: The directory or file does not exist, or the path is incorrect.
+
+Useful commands:
+
+```bash
+pwd
+ls -la
+```
+
+**Problem:** `Permission denied`
+
+Possible cause: The current user does not have sufficient permissions to perform the requested operation.
+
+Useful commands:
+
+```bash
+whoami
+ls -l
+```
+
+Investigate the permissions before considering administrator privileges.
+
+## 8. Results and Evidence
+
+Complete this section after performing the lab.
+
+**Date completed:** [Enter date]
+
+**Operating system:** [Enter your Ubuntu version]
+
+**Commands practiced:** [List the commands you successfully tested]
+
+**Challenges encountered:** [Describe any errors or difficulties]
+
+**How I solved them:** [Explain the steps you took]
+
+**What I learned:** [Summarize your main lessons]
+
+**Evidence:** [Add a screenshot or sanitized terminal output if available]
+
+## 9. Key Takeaways
+
+This lab introduces essential Linux command-line skills and system inspection techniques. These fundamentals will support future exercises involving user administration, permissions, networking, security, Bash scripting, services, backups, and troubleshooting.
+
+## 10. Next Steps
+
+- Practice file permissions with `chmod`.
+- Learn file ownership with `chown`.
+- Understand Linux users and groups.
+- Begin the Week 2 user and permissions management lab.
+
+---
+
+**Portfolio note:** This document is a learning record. Update the results and verification checklist only after completing the corresponding exercises.
 
